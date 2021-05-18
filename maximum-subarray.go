@@ -25,7 +25,7 @@ func maxSubArray(nums []int) int {
     return maxSubArraySum
 }
 func main() {
-  input := []int{1,2,2,0,1}
-  sortColors(input)
-  fmt.Println(input) // should be [0,1,1,2,2]
+  input := []int{-2,1,-3,4,-1,2,1,-5,4}
+  
+  fmt.Println(maxSubArray(input)) // should be 6 (4,-1,2,1)
 }
