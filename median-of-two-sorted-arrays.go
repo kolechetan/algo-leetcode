@@ -24,8 +24,8 @@ func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
         return b
      }
 
-    negativeINF := -10000000
-    positiveINF := 10000000
+    negativeINF := math.MinInt64
+    positiveINF := math.MaxInt64
     
     if len(nums1) > len(nums2) {
         tmp :=  nums1 
